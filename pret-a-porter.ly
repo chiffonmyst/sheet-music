@@ -63,8 +63,8 @@ harmony = \chordmode {
   s2 ees4.:7.9+ s16 c16:m7 |
   s2 b16:7 s4. e16:maj7 |
   s2 ees2:7.9+ |
-  c4 e4 gis c |
-  b e bes2 | \break
+  c4:7.5+ e4:7.5+ gis:7.5+ c:sus |
+  b:sus e:maj13 bes2:m7 | \break
   a4.:m7 s16 bes16:maj7 s2 |
   a4.:m7 s16 bes16:7 s2 | \break
   a4.:m7 s16 bes16:maj7 s2 |
@@ -284,11 +284,22 @@ e4 c16 d e f~f4. r16 e16 |
   
   r1 r1 r1 r1 r2
   r1 r2
-  r16 fis,16 gis8 a b cis16 cis a8 cis c16 b |
-  r1 r1 r1
+  r16 fis,16 gis8 a b cis16 cis a8 cis c16 b-^ |
+  r4. e8-. fis4-. fis8.-. e16-. |
+  r4. e8-. fis4-. fis8.-. gis16-. |
+  r2 e4 fis |
+
    r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
-  cis2 s2
-  s1 * 9
+  cis2 fis4.. ees16~
+  ees2 gis4.. fis16~
+  fis2 fis4.. g16~
+  g2 gis4.. b16~
+  b2 des2
+  ees2 g4 a8. cis16-^
+  r1
+  r4. e8,,-. fis4-. fis8.-. e16-. |
+  r4. e8-. fis4-. fis8.-. gis16-. |
+  r2 e4 fis |
     r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
   cis2 s2
   s1 * 9
@@ -324,12 +335,24 @@ altoMusic = \relative c' {
 
   r1 r1 r1 r1 r2
   r1 r2
-  r16 fis16 gis8 a b cis16 cis a8 cis c16 b
+  r16 fis16 gis8 a b cis16 cis a8 cis c16 b-^
 
-r1 r1 r1
+r4. cis8-. dis4-. dis8.-. cis16-. |
+  r4. cis8-. dis4-. dis8.-. e16-. |
+  r2 c4 c4 |
+
    r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
-  cis2 s2
-    s1 * 9
+  cis2 des4.. bes16~
+  bes2 cis4.. cis16~
+  cis2 des4.. c16~
+  c2 cis4.. dis16~
+  dis2 fis2
+  g2 c4 c8. gis16-^
+
+    s1
+    r4. cis,8-. dis4-. dis8.-. cis16-. |
+  r4. cis8-. dis4-. dis8.-. e16-. |
+  r2 c4 c4 |
     r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
   cis2 s2
     s1 * 9
@@ -361,12 +384,23 @@ tenorMusic = \relative c' {
 
   r1 r1 r1 r1 r2
   r1 r2
-  r16 fis,16 gis8 a b cis16 cis a8 cis c16 b
-  r1 r1 r1
+  r16 fis,16 gis8 a b cis16 cis a8 cis c16 b-^
+  r4. a8-. b4-. b8.-. a16-. |
+  r4. a8-. b4-. b8.-. cis16-. |
+  r2 g4 a4 |
   r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
-  cis2 s2
-    s1 * 9
-    r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 g'4.. g16~
+  g2 a4.. gis16~
+  gis2 g4.. bes16~
+  bes2 a4.. gis16~
+  gis2 g2
+  c2 a4 a8. e16-^
+    
+    s1
+      r4. a8-. b4-. b8.-. a16-. |
+  r4. a8-. b4-. b8.-. cis16-. |
+  r2 g4 a4 |
+    r16 cis r gis r e r cis fis fis e8 dis b16 cis~
   cis2 s2
   s1 * 9
       r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
