@@ -191,6 +191,7 @@ melody = \relative c' {
   r4. r16 e16 
   \time 4/4
   \repeat volta 2 {
+  \mark \markup \box "B"
   ais b a8 e c16 d~d4 r8 a16 c |
   dis e \tuplet 3/2 {dis d c} d8 a16 c~c4 r8. e16 |
   ais b a8 e c16 d~d8. c16 g'8 f |
@@ -241,6 +242,8 @@ melody = \relative c' {
   gis4. r16 b, c d e fis g a b cis |
   r4. r16 gis b a gis8 gis fis16 gis |
   r16 e16 e cis e8 cis16 b fis' fis e8 \tuplet 3/2 {dis16 e dis} cis dis~ |
+   \mark \markup \box "D"
+  
   dis4 r16 bes c ees gis g fis8 b, cis16 dis~ |
   dis b gis fis b8 cis16 b fis'16 fis e8 \tuplet 3/2 {dis16 e dis} cis dis~ |
   dis 4. r16 ees gis g fis8 b, cis16 dis~ |
@@ -264,11 +267,11 @@ melody = \relative c' {
 trumpetMusic = \relative c' {
   \global
 
-e'4 c16 d e f~f4. r16 e16 |
+e4 c16 d e f~f4. r16 e16 |
   d'16 des c a e ees d c~ c4 r16 d16 e8 |
   d8 g16 e~e8 c16 d~ d8. a16 c8 d |
-  e4 d8 des16 c~ c2 |
-  R2
+  e4 d8 des16 c~ c2~ |c4. r8
+  
 
    R1*4 R2
     R1*4 R2
@@ -276,9 +279,22 @@ e'4 c16 d e f~f4. r16 e16 |
   e4 c16 d e f~f4. r16 e16 |
   d'16 des c a e ees d c~ c4 r16 d16 e8 |
   d8 g16 e~e8 c16 d~ d8. a16 c8 d |
-  e4 d8 des16 c~ c2 |
+  e4 d8 des16 c~ c2~ |c4. r8
 
-  r2
+  
+  r1 r1 r1 r1 r2
+  r1 r2
+  r16 fis,16 gis8 a b cis16 cis a8 cis c16 b |
+  r1 r1 r1
+   r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
+  s1 * 9
+    r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
+  s1 * 9
+      r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
+  
 
 
 }
@@ -293,20 +309,32 @@ altoMusic = \relative c' {
   e4 c16 d e f~f4. r16 e16 |
   d'16 des c a e ees d c~ c4 r16 d16 e8 |
   d8 g16 e~e8 c16 d~ d8. a16 c8 d |
-  e4 d8 des16 c~ c2 |
+  e4 b8 bes16 a~ a2~ |a4. r8
 
-  r2
+  
     R1*4 R2
     R1*4 R2
     R1*11
-  e4 c16 d e f~f4. r16 e16 |
+  e'4 c16 d e f~f4. r16 e16 |
   d'16 des c a e ees d c~ c4 r16 d16 e8 |
   d8 g16 e~e8 c16 d~ d8. a16 c8 d |
-  e4 d8 des16 c~ c2 |
+  e4 b8 bes16 a~ a2~ |a4. r8
  
-  r2
 
 
+  r1 r1 r1 r1 r2
+  r1 r2
+  r16 fis16 gis8 a b cis16 cis a8 cis c16 b
+
+r1 r1 r1
+   r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
+    s1 * 9
+    r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
+    s1 * 9
+      r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
 }
 
 % ============================================================
@@ -319,19 +347,30 @@ tenorMusic = \relative c' {
   e,4 c16 d e f~f4. r16 e16 |
   d'16 des c a e ees d c~ c4 r16 d16 e8 |
   d8 g16 e~e8 c16 d~ d8. a16 c8 d |
-  e4 d8 des16 c~ c2 |
+  e4 g8 ges16 f~ f2~ |f4. r8
 
-  r2
+  
      R1*4 R2
     R1*4 R2
     R1*11
   e4 c16 d e f~f4. r16 e16 |
   d'16 des c a e ees d c~ c4 r16 d16 e8 |
   d8 g16 e~e8 c16 d~ d8. a16 c8 d |
-  e4 d8 des16 c~ c2 |
+  e4 g8 ges16 f~ f2~ |f4. r8
 
-  r2
 
+  r1 r1 r1 r1 r2
+  r1 r2
+  r16 fis,16 gis8 a b cis16 cis a8 cis c16 b
+  r1 r1 r1
+  r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
+    s1 * 9
+    r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
+  s1 * 9
+      r16 cis' r gis r e r cis fis fis e8 dis b16 cis~
+  cis2 s2
 
 }
 
@@ -438,7 +477,9 @@ tenorMusic = \relative c' {
       \set chordChanges = ##t
       \harmony
     } 
-    \new Staff {
+    \new Staff \with {
+      midiInstrument = "electric guitar (jazz)"
+      } {
       \melody
     }
 
